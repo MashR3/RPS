@@ -8,26 +8,35 @@ if (operation === '2') {
 	// 	alert('You have tied!! Unacceptable! Go again!');
 
 	} if ((p1 === 'r') && (p2 === 's')){
-		alert('p1 you are victorious!');
+		alert('Player 1 is victorious!');
 
 		} else if ((p1 === 'r') && (p2 === 'p')){
-		alert('p2 you are victorious!');
+		alert('Player 2 is victorious!');
 
 		} else if ((p1 === 's') && (p2 === 'r')){
-		alert('p2 you are victorious!');
+		alert('PLayer 2 is victorious!');
 
 		} else if ((p1 === 's') && (p2 === 'p')){
-		alert('p1 you are victorious!');
+		alert('Player 1 is victorious!');
 
 		} else if ((p1 === 'p') && (p2 === 's')){
-		alert('p2 you are victorious!')
+		alert('Player 2 victorious!')
 
 		} else if ((p1 === 'p') && (p2 === 'r')){
-		alert('p1 you are victorious!');
+		alert('Player 1 victorious!');
 
 		} else if (p1 === p2) {
 			alert('No draws allowed! Again!');
 		
+		var game = true;
+
+		while (game) {
+			var response = prompt('Would you like to play again? [y] or [n]').toLowerCase();
+			
+			if (response === "n");
+				game = false;
+		}
+
 	}
 
 else if (operation === "pc") {
@@ -38,13 +47,8 @@ else if (operation === "pc") {
 	alert("You must play!!");
 
 
+// var programRunning = true;
 
-
-// 	} else if (adop === "p") {
-// 		var no2 = parseFloat(prompt('Enter base number'));
-// 		var no3 = parseFloat(prompt('Enter number power'));
-// 		alert ("The answer is " + (Math.pow(no2, no3)));
-
-// 	} else {
-//   		alert('Please select a valid operator!');
-// }
+// while (programRunning) {
+// 	console.log('The program is running');
+// 	var response = prompt('would you like to end the program? y/n');
